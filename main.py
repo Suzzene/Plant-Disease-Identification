@@ -47,7 +47,8 @@ if app_mode == "HOME":
     st.markdown(
         """
         <h2 style='text-align: center;'>How it Works</h2>
-        <ol style='font-size: 18px;'>
+        <div style='text-align: center; font-size: 18px;'>
+            <ol style='display: inline-block; text-align: left;'>
             <li><b>Step 1:</b> Navigate to the "Disease Recognition" page.</li>
             <li><b>Step 2:</b> Upload an image of the affected plant.</li>
             <li><b>Step 3:</b> Get instant results along with disease information.</li>
