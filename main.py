@@ -28,16 +28,30 @@ st.image(img)
 
 # Main Page
 if app_mode == "HOME":
-    st.markdown("<h1 style='text-align: center;'>SMART DISEASE DETECTION</h1>", unsafe_allow_html=True)
+    st.markdown(
+     "<h1 style='text-align: center; color: green;'>SMART DISEASE DETECTION</h1>", 
+    unsafe_allow_html=True
+   )
     st.markdown(
         """
         <p style='text-align: center; font-size: 18px;'>
-        This application utilizes advanced machine learning techniques to identify diseases in plants. 
+        Empowering Farmers with AI-Powered Plant Disease Recognition.
         By analyzing images of plant leaves, the system can detect symptoms and provide insights into 
         possible infections, helping farmers and gardeners take preventive measures.  
-        Simply upload an image of a plant leaf, and the model will predict the disease along with suggestions 
-        for treatment and management.  
+        Upload plant images to detect diseases accurately and access actionable insights.  
         </p>
+        """, 
+        unsafe_allow_html=True
+    )
+# Adding a step-by-step guide for users
+    st.markdown(
+        """
+        <h2 style='text-align: center;'>How it Works</h2>
+        <ol style='font-size: 18px;'>
+            <li><b>Step 1:</b> Navigate to the "Disease Recognition" page.</li>
+            <li><b>Step 2:</b> Upload an image of the affected plant.</li>
+            <li><b>Step 3:</b> Get instant results along with disease information.</li>
+        </ol>
         """, 
         unsafe_allow_html=True
     )
