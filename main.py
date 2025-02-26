@@ -22,9 +22,26 @@ img = Image.open("Diseases.png")
 # width is used to set the width of an image
 st.image(img)
 
-#Main Page
+'''#Main Page
 if(app_mode=="HOME"):
-    st.markdown("<h1 style='text-align: center;'>SMART DISEASE DETECTION", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>SMART DISEASE DETECTION", unsafe_allow_html=True)'''
+
+# Main Page
+if app_mode == "HOME":
+    st.markdown("<h1 style='text-align: center;'>SMART DISEASE DETECTION</h1>", unsafe_allow_html=True)
+    st.markdown(
+        """
+        <p style='text-align: center; font-size: 18px;'>
+        This application utilizes advanced machine learning techniques to identify diseases in plants. 
+        By analyzing images of plant leaves, the system can detect symptoms and provide insights into 
+        possible infections, helping farmers and gardeners take preventive measures.  
+        Simply upload an image of a plant leaf, and the model will predict the disease along with suggestions 
+        for treatment and management.  
+        </p>
+        """, 
+        unsafe_allow_html=True
+    )
+
     
 #Prediction Page
 elif(app_mode=="DISEASE RECOGNITION"):
