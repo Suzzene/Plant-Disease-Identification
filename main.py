@@ -22,9 +22,9 @@ img = Image.open("Diseases.png")
 # width is used to set the width of an image
 st.image(img)
 
-'''#Main Page
-if(app_mode=="HOME"):
-    st.markdown("<h1 style='text-align: center;'>SMART DISEASE DETECTION", unsafe_allow_html=True)'''
+#Main Page
+#if(app_mode=="HOME"):
+#    st.markdown("<h1 style='text-align: center;'>SMART DISEASE DETECTION", unsafe_allow_html=True)
 
 # Main Page
 if app_mode == "HOME":
